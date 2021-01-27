@@ -22,14 +22,18 @@ const expectedArr2 = ["a"];
 
 /**
  * Adds the a given item to the given array.
- * - Time: O(?).
- * - Space: O(?).
+ * - Time: O(1) constant. No loops so the size of the array doesn't increase
+ *    the time our function will take.
+ * - Space: O(1) constant.
  * @param {Array<any>} arr
  * @param {any} newItem
  * @return {number} The new length of the given array.
  */
 function push(arr, newItem) {
-  // code here
+  arr[arr.length] = newItem;
+  return arr.length;
 }
+
+console.log(push(arr2, newItem2));
 
 module.exports = { push };
