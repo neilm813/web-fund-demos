@@ -6,16 +6,55 @@
 }
 
 #top-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding-top: 45px;
   padding-bottom: 45px;
   padding-left: 30px;
   padding-right: 30px;
   border-bottom: 1px solid lightgray;
+  margin-bottom: 50px;
 }
 
+/* 
+add margin-right to every span inside the #top-nav except the last one
+*/
 #top-nav span:not(:last-child) {
-  margin-right: 100px;
+  margin-right: 20px;
+}
+
+main {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+/************ DISPLAY ************/
+.row {
+  display: flex;
+}
+
+/************ SPACING ************/
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+/* margin bottom small */
+.mb-sm {
+  margin-bottom: 30px;
+}
+
+/************ ALIGNMENT ************/
+.align-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/************ BORDERS ************/
+.border-round {
+  border-radius: 50%;
 }
