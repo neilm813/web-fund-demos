@@ -8,3 +8,7 @@
    - [Functions Intro](../function-intro.md)
 2. Tue
    - [basicAlgos](../basicAlgos.js)
+3. Wed
+   - [push](../recreated_methods/array/push.js)
+   - [nthLast](../arrays/nthLast.js)
+   - unfinished Basic Algos
