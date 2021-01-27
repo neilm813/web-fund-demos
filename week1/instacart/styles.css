@@ -26,8 +26,24 @@ main {
   padding-right: 20%;
 }
 
+.your-stores {
+  padding: 20px 200px 20px 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 8px;
+  margin-right: 20px;
+}
+
+.your-stores .store-logo {
+  margin-right: 15px;
+}
+
+/************ TEXT ************/
 .font-bold {
   font-weight: bold;
+}
+
+.font-muted {
+  color: gray;
 }
 
 /************ DISPLAY ************/
@@ -45,6 +61,10 @@ main {
   margin-bottom: 30px;
 }
 
+.pad-your-stores {
+  padding: 20px 150px 20px 20px;
+}
+
 /************ ALIGNMENT ************/
 .align-center {
   align-items: center;
@@ -55,6 +75,15 @@ main {
 }
 
 /************ BORDERS ************/
-.border-round {
+.border-circle {
   border-radius: 50%;
+}
+
+.border-round {
+  border-radius: 10px;
+}
+
+/************ SHADOWS ************/
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 8px;
 }
