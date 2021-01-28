@@ -12,3 +12,6 @@
    - [push](../recreated_methods/array/push.js)
    - [nthLast](../arrays/nthLast.js)
    - unfinished Basic Algos
+4. Thur
+   - [pop](../recreated_methods/array/pop.js)
+   - [indexOf](../recreated_methods/array/indexOf.js)
