@@ -9,9 +9,9 @@
 2. Tue
    - [basicAlgos](../basicAlgos.js)
 3. Wed
-   - [push](../recreated_methods/array/push.js)
+   - [push](../recreated_methods/Array/push.js)
    - [nthLast](../arrays/nthLast.js)
    - unfinished Basic Algos
 4. Thur
-   - [pop](../recreated_methods/array/pop.js)
-   - [indexOf](../recreated_methods/array/indexOf.js)
+   - [pop](../recreated_methods/Array/pop.js)
+   - [indexOf](../recreated_methods/Array/indexOf.js)
