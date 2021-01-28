@@ -11,6 +11,9 @@ const expected1 = 3;
 // what arr1 should be after running pop function
 const expectedArr1 = [1, 2];
 
+const arr2 = [];
+const expected2 = undefined;
+
 /**
  * Removes the last item from the given array.
  * - Time: O(1) constant. There is no loop that is dependent on the size of
@@ -22,6 +25,10 @@ const expectedArr1 = [1, 2];
  *    was empty.
  */
 function pop(arr) {
+  if (arr.length === 0) {
+    return undefined;
+  }
+
   const popped = arr[arr.length - 1];
   arr.length = arr.length - 1;
   return popped;
