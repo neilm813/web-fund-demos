@@ -20,12 +20,18 @@ const arr2Expected = ["a"];
 /**
  * Shifts all items to the right by one to make space to add the given new item
  * to the front of the given array.
- * - Time: O(?).
- * - Space: O(?).
+ * - Time: O(n) linear, n = arr.length.
+ * - Space: O(1) constant.
  * @param {Array<any>} arr
  * @param {any} newItem To add to front.
  * @return {number} New array length.
  */
 function unshift(arr, newItem) {
-  // code here
+  // shift every item to the right by 1 starting from the back
+  for (let i = arr.length - 1; i >= 0; i--) {
+    arr[i + 1] = arr[i];
+  }
+
+  arr[0] = newItem;
+  return arr.length;
 }

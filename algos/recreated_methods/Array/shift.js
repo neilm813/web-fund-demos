@@ -18,11 +18,20 @@ const arr2Expected = ["b", "c", "d"];
 /**
  * Shifts every item of the array to the left by 1 so that the first item is
  * removed and returned.
- * - Time: O(?).
- * - Space: O(?).
+ * - Time: O(n-1) -> O(n) linear. n = arr.length minus 1 because we start
+ *    iterating at 1. Simplified to O(n).
+ * - Space: O(1) constant, the algo doesn't create any new arrays or objects
+ *    that grow in size as the input array grows.
  * @param {Array<any>} arr
  * @return {any} The removed value previously at idx 0.
  */
 function shift(arr) {
-  // code here
+  const firstItem = arr[0];
+
+  for (let i = 1; i < arr.length; i++) {
+    arr[i - 1] = arr[i];
+  }
+
+  arr.length = arr.length - 1; // cut off 'empty' value at the end
+  return firstItem;
 }
