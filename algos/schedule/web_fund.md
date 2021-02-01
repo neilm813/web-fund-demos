@@ -15,3 +15,11 @@
 4. Thur
    - [pop](../recreated_methods/Array/pop.js)
    - [indexOf](../recreated_methods/Array/indexOf.js)
+
+---
+
+## Week 2 - Arrays
+
+1. Mon
+   - [shift](../recreated_methods/Array/shift.js)
+   - [unshift](../recreated_methods/Array/unshift.js)
