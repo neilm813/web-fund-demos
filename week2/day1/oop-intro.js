@@ -23,20 +23,8 @@ yummy([0, 0, 0]);
 yummy([0, "yummy", 0, "yummy", 0]);
 
 /**
- * OOP
- * Lets represent a classroom in our code. We have an instructor and a class
- * hosted at a zoom link and a list of attendees.
- *
- * There are multiple classrooms going on, each with their own instructor and
- * attendees.
- */
-
-/**
- * How can we represent a complex thing in code? Some thing that has multiple
- * attributes / properties / characteristics. We call these "things" objects.
- *
- * If we don't use an object in code, we don't have a great way to organize
- * all of the properties that are part of a single object.
+ * OOP Intro, how to represent a thing that has multiple properties /
+ * attributes / characteristics? Use an object.
  */
 
 // As separate variables
