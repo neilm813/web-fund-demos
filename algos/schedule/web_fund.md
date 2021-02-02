@@ -23,3 +23,7 @@
 1. Mon
    - [shift](../recreated_methods/Array/shift.js)
    - [unshift](../recreated_methods/Array/unshift.js)
+2. Tue
+   - [concat](../recreated_methods/Array/concat.js)
+   - [concatSelf](../arrays/concatSelf.js)
+   - [indexOfMinVal](../arrays/indexOfMinVal.js)
