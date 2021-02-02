@@ -93,22 +93,37 @@ class Classroom {
       console.log(attendee.fullName());
     }
   }
+
+  avgAttendeesCodeExperience() {
+    var totalYearsCoding = 0;
+
+    for (let i = 0; i < this.attendees.length; i++) {
+      var attendee = this.attendees[i];
+      totalYearsCoding += attendee.yearsCoding;
+    }
+
+    return totalYearsCoding / this.attendees.length;
+  }
 }
 
 var neilsClassroom = new Classroom(
   new Person("Neil", "M", 5),
   "OOP",
   "https://codingdojo.zoom.us/j/94752680219?pwd=c1U1S0FtU3p0RHgxVzJ5dWx4ZnMrdz09",
-  [new Person("Stephen", "Parks", 0), new Person("Jesus", "Sandoval", 0)]
+  [new Person("Stephen", "Parks", 1), new Person("Jesus", "Sandoval", 3)]
 );
 
 var codysClassroom = new Classroom(
   new Person("Cody", "T", 5),
   "Arrays",
   "https://codingdojo.zoom.us/j/94752680219?pwd=c1U1S0FtU3p0RHgxVzJ5dWx4ZnMrdz09",
-  [new Person("Foo", "Bar", 0), new Person("Jayne", "Doe", 0)]
+  [new Person("Foo", "Bar", 2), new Person("Jayne", "Doe", 0)]
 );
 
-console.log(neilsClassroom);
-neilsClassroom.printAttendees();
-codysClassroom.printAttendees();
+// console.log(neilsClassroom);
+// console.log(neilsClassroom.attendees);
+// neilsClassroom.printAttendees();
+// codysClassroom.printAttendees();
+
+console.log(neilsClassroom.avgAttendeesCodeExperience());
+console.log(codysClassroom.avgAttendeesCodeExperience());
