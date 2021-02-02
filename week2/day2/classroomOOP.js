@@ -156,6 +156,14 @@ function buildClassroomHtml(classroom) {
 
   let classroomRow = document.getElementById("classroom-row");
   classroomRow.appendChild(classRoomContainer);
+
+  // pass two arguments to the addEventListener method
+  // first is what kind of event we want to listen for
+  // second is what function we want executed when the event happens
+  classRoomContainer.addEventListener("click", function () {
+    this.classList.toggle("selected-classroom");
+    classRoomHeading.classList.toggle("invisible");
+  });
 }
 
 // buildClassroomHtml(neilsClassroom);
