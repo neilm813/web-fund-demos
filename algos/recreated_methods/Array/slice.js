@@ -40,14 +40,34 @@ const expected6 = [];
 
 /**
  * Returns a slice of given arr.
- * - Time: O(?).
- * - Space: O(?).
+ * - Time: O(endIdx - startIdx) -> simplified O(n), linear. Worst case is
+ *    startIdx = 0 and endIdx = arr.length which results in a loop through the
+ *    full arr.
+ * - Space: O(n) linear, same worst case as above.
  * @param {Array<any>} arr
- * @param {number} startIdx
- * @param {number} endIdx
- * @return {Array<any>} The slice of the given arr from startIdx inclusive
+ * @param {number} startIdx - Inclusive.
+ * @param {number} endIdx - Exclusive.
+ * @return {Array<any>} The slice of the given arr from startIdx
  *    to endIdx.
  */
 function slice(arr, startIdx, endIdx) {
-  // code here
+  // we might need to adjust the params
+  // make a new var so we don't change the original input
+  let adjustedStartIdx = startIdx;
+  let adjustedEnd = endIdx;
+  const slicedArr = [];
+
+  if (startIdx < 0) {
+    adjustedStartIdx = 0;
+  }
+
+  if (endIdx > arr.length) {
+    adjustedEnd = arr.length;
+  }
+
+  for (let i = adjustedStartIdx; i < adjustedEnd; i++) {
+    slicedArr.push(arr[i]);
+  }
+
+  return slicedArr;
 }
