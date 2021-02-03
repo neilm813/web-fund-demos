@@ -13,6 +13,11 @@ $(document).ready(function () {
   let $jokesDiv = $("#jokes");
   let $goodJokesDiv = $("#good-jokes");
   let $badJokesDiv = $("#bad-jokes");
+  /**
+   * If you select the element without jQuery, it will not have the helpful
+   * jQuery methods available.
+   */
+  // let jokesDiv = document.getElementById("jokes");
 
   $.get({
     url: "https://icanhazdadjoke.com/search",
