@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dad Jokes</title>
+
+    <!-- Load in Bootstrap CSS Library -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- Load in jQuery Library -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Load our JS file AFTER jQuery so we have access to jQuery -->
+    <script src="app.js"></script>
+  </head>
+  <body class="bg-dark text-light">
+    <div class="container pt-3">
+      <h1 class="text-center pb-1">Dad Jokes</h1>
+      <hr />
+
+      <div class="row">
+        <div id="jokes" class="col"></div>
+      </div>
+
+      <div class="row">
+        <div id="good-jokes" class="col">
+          <hr />
+          <h2 class="text-center text-success">Good Jokes</h2>
+        </div>
+        <div id="bad-jokes" class="col">
+          <hr />
+          <h2 class="text-center text-danger">Bad Jokes</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
