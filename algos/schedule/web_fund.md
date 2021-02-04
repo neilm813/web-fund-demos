@@ -30,3 +30,6 @@
 3. Wed
    - [reverseArr](../arrays/reverseArr.js)
    - [slice](../recreated_methods/Array/slice.js)
+4. Thur
+   - [removeAt](../arrays/removeAt.js)
+   - [minToFront](../arrays/minToFront.js)
