@@ -4,6 +4,10 @@
   the items in arr1 and arr2 at that same index
  */
 
+const test1arrA = [5, 10, 15];
+const test1arrB = [10, 10, 10];
+const expected1 = [15, 20, 25];
+
 /**
  * Returns a new array that is the sum of the columns of the two given arrays
  * of equal lengths.
