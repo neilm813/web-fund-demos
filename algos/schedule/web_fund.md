@@ -7,33 +7,33 @@
    - basics: variables, loops, functions
    - [Functions Intro](../function-intro.md)
 2. Tue
-   - [basicAlgos](../basicAlgos.js)
+   - TBD
 3. Wed
-   - [push](../recreated_methods/Array/push.js)
-   - [nthLast](../arrays/nthLast.js)
+   - TBD
+   - TBD
    - unfinished Basic Algos
 4. Thur
-   - [pop](../recreated_methods/Array/pop.js)
-   - [indexOf](../recreated_methods/Array/indexOf.js)
+   - TBD
+   - TBD
 
 ---
 
 ## Week 2 - Arrays
 
 1. Mon
-   - [shift](../recreated_methods/Array/shift.js)
-   - [unshift](../recreated_methods/Array/unshift.js)
+   - TBD
+   - TBD
 2. Tue
-   - [concat](../recreated_methods/Array/concat.js)
-   - [concatSelf](../arrays/concatSelf.js)
-   - [indexOfMinVal](../arrays/indexOfMinVal.js)
+   - TBD
+   - TBD
+   - TBD
 3. Wed
-   - [reverseArr](../arrays/reverseArr.js)
-   - [slice](../recreated_methods/Array/slice.js)
+   - TBD
+   - TBD
 4. Thur
-   - [removeAt](../arrays/removeAt.js)
-   - [minToFront](../arrays/minToFront.js)
+   - TBD
+   - TBD
 5. Fri
-   - [flatten2dArray](../arrays/flatten2dArray.js)
-   - [secondLargest](../arrays/secondLargest.js)
-   - [sumArrColumns](../arrays/sumArrColumns.js)
+   - TBD
+   - TBD
+   - TBD

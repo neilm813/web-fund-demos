@@ -6,7 +6,7 @@
  *
  * Parameters are just like variables, they can be named anything and can store
  * any kind of data. The difference is that parameters are variables that
- * represent values / data that is passed into a function at the time of the
+ * hold value / data that is passed into a function at the time of the
  * function being called / executed / invoked.
  *
  * The parameters of a function are whatever outside information the function
@@ -16,7 +16,8 @@
  * of asking yourself what a function needs in order to do it's job to
  * determine what parameters are needed. Just as you would request needed
  * information to complete a task you were given, a function would need that
- * information to do the same task. Remember this!
+ * information to do the same task, because you are the one writing the
+ * function to make it work. Remember this!
  */
 
 /**
@@ -32,11 +33,6 @@
  *    the two given numbers added together.
  */
 function addTwoNums(num1, num2) {
-  console.log("_".repeat(80));
-  console.log("The addTwoNums function has been executed:");
-  console.log("The value of parameter num1 is:", num1);
-  console.log("The value of parameter num2 is:", num2);
-
   /**
    * A function can "return" some value / data that can be saved and used
    * outside of the function. A function can only return one time because
@@ -74,21 +70,29 @@ console.log(
   grossPrice
 );
 
-/****************************************************************************
+/***********************************README*************************************
  * Complete the below functions. Add the parameters the function needs to
- * do it's job.
- ****************************************************************************/
+ * do it's job. Refer to the above examples and comments when confused about
+ * how to write parameters, how to make the function return data (an answer),
+ * or how to execute / call a function.
+ *
+ * To run the file, at the to of VSCode, click Terminal, New Terminal, then
+ * type node with a space after it, then drag and drop the the file you want to
+ * run onto the terminal.
+ *****************************************************************************/
 
 /**
  * Concatenate three given strings together in this order:
  * 3rd string, 1st string, 2nd string.
  * @return {string} The three given strings combined (concatenated).
  */
-function combineStrings() {}
-console.log("_".repeat(80));
-console.log(`Executing: combineStrings("a", "b", "c")`);
-console.log("Expected:", "cab");
-console.log("Actual:", combineStrings("a", "b", "c"));
+function combineStrings(/* Replace this comment with the needed parameters. What info does this function need? */) {
+  // Replace this comment with the code needed to make this function work.
+}
+
+// Test the combineStrings function.
+let test = combineStrings("a", "b", "c");
+console.log(test, "should equal 'cab'");
 
 /**
  * Combine two given strings together with the smaller string being added
@@ -96,15 +100,15 @@ console.log("Actual:", combineStrings("a", "b", "c"));
  * added to the front.
  * @return {string} The combined strings.
  */
-function combineSmallerStringFirst() {}
-console.log("_".repeat(80));
-console.log(`Executing: combineSmallerStringFirst("gramming", "pro")`);
-console.log("Expected:", "programming");
-console.log("Actual:", combineSmallerStringFirst("gramming", "pro"));
-console.log("_".repeat(80));
-console.log(`Executing: combineSmallerStringFirst("pro", "gramming")`);
-console.log("Expected:", "programming");
-console.log("Actual:", combineSmallerStringFirst("pro", "gramming"));
+function combineSmallerStringFirst(/* Replace this comment with the needed parameters. What info does this function need? */) {
+  // Replace this comment with the code needed to make this function work.
+}
+
+test = combineSmallerStringFirst("gramming", "pro");
+console.log(test, "should be 'programming'");
+
+test = combineSmallerStringFirst("pro", "gramming");
+console.log(test, "should be 'programming'");
 
 /* 
   Test the below functions by executing them and logging what they return
@@ -153,142 +157,3 @@ function findLongestWord() {}
  * @return {number} The sum of the given range, inclusive.
  */
 function inclusiveRangeSum() {}
-
-/* SOLUTIONS ******************************************************************/
-
-/**
- * Combines the given strings in the following order: 3rd, 1st, 2nd.
- * @param {string} s1 The first string.
- * @param {string} s2 The second string.
- * @param {string} s3 The third string.
- * @return {string} The combined string.
- */
-function combineStrings(s1, s2, s3) {
-  return s3 + s1 + s2;
-}
-
-/**
- * Combines the two given strings with the smaller string first or the first
- * string first if the lengths are the same.
- * @param {string} s1 The first string.
- * @param {string} s2 The second string.
- * @return {string} The given strings combined.
- */
-function combineSmallerStringFirst(s1, s2) {
-  if (s1.length <= s2.length) {
-    return s1 + s2;
-  } else {
-    return s2 + s1;
-  }
-}
-
-/**
- * Repeats the given string the given amount of times without using the built
- * in .repeat method.
- * @param {string} str The string to be repeated.
- * @param {number} repeatAmount The amount of times to repeat the given string.
- * @return {string} The given string repeated.
- */
-function stringRepeat(str, repeatAmount) {
-  let repeatedStr = "";
-
-  for (let i = 0; i < repeatAmount; i++) {
-    repeatedStr += str;
-  }
-  return repeatedStr;
-}
-/**
- * Calculates how many miles can be driven before running out of gas.
- * @param {number} mpg How many miles the car gets per gallon.
- * @param {number} gallonsInTank How many gallons are in the tank.
- * @return {number} The amount of miles until empty.
- */
-function milesToEmpty(mpg, gallonsInTank) {
-  return mpg * gallonsInTank;
-}
-
-/**
- * Totals the length of all the words in the given array.
- * @param {Array<string>} words
- * @return {number} The total length of all the given words.
- */
-function totalWordsLength(words) {
-  let totalLen = 0;
-
-  for (let i = 0; i < words.length; i++) {
-    totalLen += words[i].length;
-  }
-
-  return totalLen;
-}
-
-/**
- * Totals the length of all the words in the given array.
- * @param {Array<string>} words
- * @return {number} The total length of all the given words.
- */
-function totalWordsLength2(words) {
-  // Join the words together into 1 string then get the length of that.
-  return words.join("").length;
-}
-
-/**
- * Finds the average length of the given words.
- * @param {Array<string>} words
- * @return {number} The average length of the given words.
- */
-function avgWordLength(words) {
-  let totalLen = 0;
-
-  for (let i = 0; i < words.length; i++) {
-    totalLen += words[i].length;
-  }
-
-  return totalLen / words.length;
-}
-
-/**
- * Finds the average length of the given words.
- * @param {Array<string>} words
- * @return {number} The average length of the given words.
- */
-function avgWordLength2(words) {
-  return words.join("").length / words.length;
-}
-
-/**
- * Finds the longest word in the given array of words.
- * @param {Array<string>} words
- * @return {string} The longest word. If there are multiple words with the same
- *    length, this will be the last word in the array with that length.
- */
-function findLongestWord(words) {
-  let longestWord = "";
-
-  for (let i = 0; i < words.length; i++) {
-    let word = words[i];
-
-    if (word.length >= longestWord.length) {
-      longestWord = word;
-    }
-  }
-
-  return longestWord;
-}
-
-/**
- * Calculates the sum of the given range, inclusive. I.e., the sum of the first
- * number through the last number, inclusive.
- * @param {number} start The start of the range.
- * @param {number} end The end of the range.
- * @return {number} The sum of the given range, inclusive.
- */
-function inclusiveRangeSum(start, end) {
-  let sum = 0;
-
-  for (let i = start; i <= end; i++) {
-    sum += i;
-  }
-
-  return sum;
-}
