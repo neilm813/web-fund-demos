@@ -110,6 +110,9 @@ console.log(test, "should be 'programming'");
 test = combineSmallerStringFirst("pro", "gramming");
 console.log(test, "should be 'programming'");
 
+test = combineSmallerStringFirst("abc", "def");
+console.log(test, "should be 'abcdef'");
+
 /* 
   Test the below functions by executing them and logging what they return
   as seen above. You can do a simpler console.log, but the console / terminal
@@ -157,3 +160,142 @@ function findLongestWord() {}
  * @return {number} The sum of the given range, inclusive.
  */
 function inclusiveRangeSum() {}
+
+/* SOLUTIONS ******************************************************************/
+
+/**
+ * Combines the given strings in the following order: 3rd, 1st, 2nd.
+ * @param {string} s1 The first string.
+ * @param {string} s2 The second string.
+ * @param {string} s3 The third string.
+ * @return {string} The combined string.
+ */
+function combineStrings(s1, s2, s3) {
+  return s3 + s1 + s2;
+}
+
+/**
+ * Combines the two given strings with the smaller string first or the first
+ * string first if the lengths are the same.
+ * @param {string} s1 The first string.
+ * @param {string} s2 The second string.
+ * @return {string} The given strings combined.
+ */
+function combineSmallerStringFirst(s1, s2) {
+  if (s1.length <= s2.length) {
+    return s1 + s2;
+  } else {
+    return s2 + s1;
+  }
+}
+
+/**
+ * Repeats the given string the given amount of times without using the built
+ * in .repeat method.
+ * @param {string} str The string to be repeated.
+ * @param {number} repeatAmount The amount of times to repeat the given string.
+ * @return {string} The given string repeated.
+ */
+function stringRepeat(str, repeatAmount) {
+  let repeatedStr = "";
+
+  for (let i = 0; i < repeatAmount; i++) {
+    repeatedStr += str;
+  }
+  return repeatedStr;
+}
+/**
+ * Calculates how many miles can be driven before running out of gas.
+ * @param {number} mpg How many miles the car gets per gallon.
+ * @param {number} gallonsInTank How many gallons are in the tank.
+ * @return {number} The amount of miles until empty.
+ */
+function milesToEmpty(mpg, gallonsInTank) {
+  return mpg * gallonsInTank;
+}
+
+/**
+ * Totals the length of all the words in the given array.
+ * @param {Array<string>} words
+ * @return {number} The total length of all the given words.
+ */
+function totalWordsLength(words) {
+  let totalLen = 0;
+
+  for (let i = 0; i < words.length; i++) {
+    totalLen += words[i].length;
+  }
+
+  return totalLen;
+}
+
+/**
+ * Totals the length of all the words in the given array.
+ * @param {Array<string>} words
+ * @return {number} The total length of all the given words.
+ */
+function totalWordsLength2(words) {
+  // Join the words together into 1 string then get the length of that.
+  return words.join("").length;
+}
+
+/**
+ * Finds the average length of the given words.
+ * @param {Array<string>} words
+ * @return {number} The average length of the given words.
+ */
+function avgWordLength(words) {
+  let totalLen = 0;
+
+  for (let i = 0; i < words.length; i++) {
+    totalLen += words[i].length;
+  }
+
+  return totalLen / words.length;
+}
+
+/**
+ * Finds the average length of the given words.
+ * @param {Array<string>} words
+ * @return {number} The average length of the given words.
+ */
+function avgWordLength2(words) {
+  return words.join("").length / words.length;
+}
+
+/**
+ * Finds the longest word in the given array of words.
+ * @param {Array<string>} words
+ * @return {string} The longest word. If there are multiple words with the same
+ *    length, this will be the last word in the array with that length.
+ */
+function findLongestWord(words) {
+  let longestWord = "";
+
+  for (let i = 0; i < words.length; i++) {
+    let word = words[i];
+
+    if (word.length >= longestWord.length) {
+      longestWord = word;
+    }
+  }
+
+  return longestWord;
+}
+
+/**
+ * Calculates the sum of the given range, inclusive. I.e., the sum of the first
+ * number through the last number, inclusive.
+ * @param {number} start The start of the range.
+ * @param {number} end The end of the range.
+ * @return {number} The sum of the given range, inclusive.
+ */
+function inclusiveRangeSum(start, end) {
+  let sum = 0;
+
+  for (let i = start; i <= end; i++) {
+    sum += i;
+  }
+
+  return sum;
+}
