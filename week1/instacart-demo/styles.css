@@ -1,0 +1,52 @@
+/* Basic CSS Reset so 'normalize' all browsers (remove differences in default margin & padding) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main-header {
+  border-bottom: 1px solid lightgray;
+}
+
+/**************************************************
+DISPLAY
+***************************************************/
+.flex-row {
+  display: flex;
+}
+
+/**************************************************
+BORDERS
+***************************************************/
+.border-red {
+  border: 2px solid red;
+}
+
+.border-green {
+  border: 2px solid green;
+}
+
+.border-orange {
+  border: 2px solid orange;
+}
+
+/**************************************************
+SPACING / ALIGNMENT
+***************************************************/
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.pad-md-lg {
+  /* all around */
+  padding: 40px;
+}
+
+.mr-sm {
+  margin-right: 15px;
+}
