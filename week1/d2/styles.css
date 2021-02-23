@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#first-p {
+  color: red;
+  margin-bottom: 37px;
+}
+
+.green {
+  color: green;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.cool-text {
+  color: cornflowerblue;
+  text-decoration: underline;
+  font-style: italic;
+  text-decoration: line-through;
+}

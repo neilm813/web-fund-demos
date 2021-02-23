@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.margin-right-sm {
+  margin-right: 10px;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
+
+/* mb short for margin-bottom, md for medium */
+.mb-md {
+  margin-bottom: 20px;
+}
+
+/* select all paragraphs inside id second-row */
+#second-row p {
+  display: inline-block;
+  width: 600px;
+}
+
+/* Can only be used on a display flex element */
+.justify-content-center {
+  justify-content: center;
+}
+
+.img-md {
+  height: 200px;
+}
+
+.img-lg {
+  height: 400px;
+}
