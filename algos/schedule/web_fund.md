@@ -7,7 +7,7 @@
    - basics: variables, loops, functions
    - [Functions Intro](../function-intro.md)
 2. Tue
-   - TBD
+   - [basicAlgos](../basicAlgos.js)
 3. Wed
    - TBD
    - TBD
