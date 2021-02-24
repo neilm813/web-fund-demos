@@ -19,7 +19,7 @@ const expected2 = 1;
 const expectedArr2 = ["a"];
 
 /**
- * Adds the a given item to the given array.
+ * Adds a given item to back of the given array.
  * - Time: O(?).
  * - Space: O(?).
  * @param {Array<any>} arr
