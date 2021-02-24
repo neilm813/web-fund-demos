@@ -9,9 +9,9 @@
 2. Tue
    - [basicAlgos](../basicAlgos.js)
 3. Wed
-   - TBD
-   - TBD
-   - unfinished Basic Algos
+   - [push](../recreated_methods/Array/push.js)
+   - [nthLast](../arrays/nthLast.js)
+   - unfinished [basicAlgos](../basicAlgos.js)
 4. Thur
    - TBD
    - TBD
