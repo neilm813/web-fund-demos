@@ -19,15 +19,18 @@ const expected2 = 1;
 const expectedArr2 = ["a"];
 
 /**
- * Adds a given item to back of the given array.
- * - Time: O(?).
- * - Space: O(?).
+ * Adds the a given item to back of the given array.
+ * - Time: O(1) constant. It takes the same amount of time to add to the back
+ *    of the arr regardless of how long the arr is since there is no loop.
+ * - Space: O(1) constant. This algo doesn't need to create an array or object
+ *    that takes up extra space / memory as the size of input grows.
  * @param {Array<any>} arr
  * @param {any} newItem
  * @return {number} The new length of the given array.
  */
 function push(arr, newItem) {
-  // code here
+  arr[arr.length] = newItem;
+  return arr.length;
 }
 
 // Tests

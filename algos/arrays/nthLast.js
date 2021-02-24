@@ -22,15 +22,23 @@ const idx4 = -1;
 const expected4 = null;
 
 /**
- * Retrieves the nth to last indexed item from the given array.
- * - Time: O(?).
- * - Space: O(?).
+ * Retrieves the nth to last item from the given array.
+ * - Time: O(1) constant. This algo doesn't need to loop so the time it takes
+ *    is constant whether or not the array is large or small.
+ * - Space: O(1) constant. This algo doesn't need to create a new array or
+ *    object that grows in size as the input array length increases.
  * @param {Array<any>} arr
  * @param {number} nthToLast
  * @return {any} The item at the nthToLast index or null.
  */
 function nthLast(arr, nthToLast) {
-  // code here
+  let idx = arr.length - nthToLast;
+
+  if (idx >= 0 && idx < arr.length) {
+    return arr[idx];
+  } else {
+    return null;
+  }
 }
 
 // Tests
