@@ -1,4 +1,6 @@
 /**
+ * Solutions are at bottom.
+ *
  * STUDY this until the concept is clear to you, it is very important!
  *
  * A function is simply some instructions (code) that we want to save so that
