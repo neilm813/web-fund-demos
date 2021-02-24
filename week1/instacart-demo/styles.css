@@ -50,3 +50,8 @@ SPACING / ALIGNMENT
 .mr-sm {
   margin-right: 15px;
 }
+
+/* Select all the spans inside of id="top-nav" except the last span */
+#top-nav span:not(:last-child) {
+  margin-right: 15px;
+}
