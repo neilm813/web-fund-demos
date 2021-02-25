@@ -13,8 +13,8 @@
    - [nthLast](../arrays/nthLast.js)
    - unfinished [basicAlgos](../basicAlgos.js)
 4. Thur
-   - TBD
-   - TBD
+   - [pop](../recreated_methods/Array/pop.js)
+   - [indexOf](../recreated_methods/Array/indexOf.js)
 
 ---
 
