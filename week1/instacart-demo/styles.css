@@ -9,6 +9,15 @@
   border-bottom: 1px solid lightgray;
 }
 
+/* 
+  Select all the spans inside of id="top-nav" except the last span.
+
+  ALTERNATIVELY, could just add a margin-right class to every span except the last one manually.
+*/
+#top-nav .nav-link:not(:last-child) {
+  margin-right: 15px;
+}
+
 /* There should only be one main, so no need to add an id to it. */
 main {
   padding-left: 20%;
@@ -19,12 +28,17 @@ main {
   padding: 20px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 5px;
+  width: 300px;
 }
 
 /* Select all store-logo class elements that are inside store-card class elements. */
 .store-card .store-logo {
   margin-right: 20px;
   border-radius: 50%;
+}
+
+.store-card small {
+  color: #72767e;
 }
 
 /**************************************************
@@ -85,11 +99,6 @@ SPACING / ALIGNMENT
   margin-bottom: 20px;
 }
 
-/* 
-  Select all the spans inside of id="top-nav" except the last span.
-
-  ALTERNATIVELY, could just add a margin-right class to every span except the last one manually.
-*/
-#top-nav span:not(:last-child) {
-  margin-right: 15px;
+.mb-lg {
+  margin-bottom: 40px;
 }

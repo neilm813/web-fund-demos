@@ -22,8 +22,26 @@ main {
   margin-top: 15px;
 }
 
-#projects-row div:not(:last-child) {
+#projects-row .project-panel:not(:last-child) {
   margin-right: 20px;
+}
+
+.project-panel {
+  /* Keep the panels the same width despite different amounts of content. */
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.project-panel .project-img {
+  width: 100%;
+  /* Get rid of tiny gap under img */
+  display: block;
+}
+
+.project-panel .project-desc {
+  min-height: 360px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .bg-muted {
