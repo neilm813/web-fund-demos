@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#top-header {
+  padding: 30px;
+  align-items: center;
+}
+
+main {
+  background-color: #6f5964;
+  padding: 20px 30px;
+}
+
+#profile-pic {
+  margin-right: 20px;
+}
+
+#about-me p {
+  margin-top: 15px;
+}
+
+#projects-row div:not(:last-child) {
+  margin-right: 20px;
+}
+
+.bg-muted {
+  /* background-color: #f8f8f8; */
+  background-image: linear-gradient(#f2f2f2, #fefefe);
+}
+
+.bg-light {
+  background-color: #ede5ec;
+}
+
+.bg-light-gradient {
+  /* change to gradient */
+  background-color: #9e9da5;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.px-sm {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.p-sm {
+  padding: 10px;
+}
+
+.mb-md {
+  margin-bottom: 20px;
+}
