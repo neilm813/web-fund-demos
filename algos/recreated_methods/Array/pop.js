@@ -26,11 +26,11 @@ const expected4 = undefined;
  * Removes the last item from the given array.
  * - Time: O(?).
  * - Space: O(?).
- * @param {Array<any>} arr
+ * @param {Array<any>} items
  * @return {any} The removed last item or undefined if the given array was
  *    was empty.
  */
-function pop(arr) {
+function pop(items) {
   // code here
 }
 
