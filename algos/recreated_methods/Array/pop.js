@@ -24,14 +24,22 @@ const expected4 = undefined;
 
 /**
  * Removes the last item from the given array.
- * - Time: O(?).
- * - Space: O(?).
- * @param {Array<any>} items
+ * - Time: O(1) constant. There is no loop that is dependent on the size of
+ *    the given arr.
+ * - Space: O(1) constant. This algo doesn't have to create an array or object
+ *    that grows in size as the size of the input array grows.
+ * @param {Array<any>} arr
  * @return {any} The removed last item or undefined if the given array was
  *    was empty.
  */
-function pop(items) {
-  // code here
+function pop(arr) {
+  if (arr.length === 0) {
+    return undefined;
+  }
+
+  const popped = arr[arr.length - 1];
+  arr.length = arr.length - 1;
+  return popped;
 }
 
 // Tests

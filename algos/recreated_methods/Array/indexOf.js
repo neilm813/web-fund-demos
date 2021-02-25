@@ -22,15 +22,34 @@ const searchItem4 = 5;
 const expected4 = -1;
 
 /**
- * Finds the index from the given array where the given item is found.
- * - Time: O(?).
- * - Space: O(?).
+ * Finds and the index from the given array where the given item is found.
+ * - Time: O(n) linear, n = arr.length. Worst case is the item is at the last
+ *    index so the whole array is looped through.
+ * - Space: O(1) constant. This algo doesn't need to take up more
+ *    space / memory as the input array grows in size.
  * @param {Array<any>} arr
  * @param {any} searchItem The item to find.
  * @return {number} The index of found item, or -1 if not found.
  */
 function indexOf(arr, searchItem) {
-  // code here
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === searchItem) {
+      return i;
+    }
+  }
+  return -1;
+}
+
+function indexOf2(arr, searchItem) {
+  let foundIdx = -1;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === searchItem) {
+      foundIdx = i;
+      break;
+    }
+  }
+  return foundIdx;
 }
 
 // Tests
