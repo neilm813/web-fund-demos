@@ -21,19 +21,5 @@
 ## Week 2 - Arrays
 
 1. Mon
-   - TBD
-   - TBD
-2. Tue
-   - TBD
-   - TBD
-   - TBD
-3. Wed
-   - TBD
-   - TBD
-4. Thur
-   - TBD
-   - TBD
-5. Fri
-   - TBD
-   - TBD
-   - TBD
+   - [shift](../recreated_methods/Array/shift.js)
+   - [unshift](../recreated_methods/Array/unshift.js)
