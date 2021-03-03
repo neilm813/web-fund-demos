@@ -27,3 +27,6 @@
    - [concat](../recreated_methods/Array/concat.js)
    - [indexOfMinVal](../arrays/indexOfMinVal.js)
    - [concatSelf](../arrays/concatSelf.js)
+3. Wed
+   - [reverseArr](../arrays/reverseArr.js)
+   - [slice](../recreated_methods/Array/slice.js)
