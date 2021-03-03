@@ -1,11 +1,31 @@
 $(document).ready(function () {
-  var paragraphs = $(".test");
-  paragraphs.text("woaw");
+  // Use the .on for dynamically added HTML elements (elements added from js)
+  $("#flashcards-container").on(
+    {
+      mouseenter: function (event) {
+        $(this).addClass("bg-warning");
+      },
+      mouseleave: function (event) {
+        $(this).removeClass("bg-warning");
+      },
+    },
+    ".card"
+  );
+
+  $("#flashcards-container").on("click", ".card", function (event) {
+    $(this).find(".question").toggleClass("d-none");
+    $(this).find(".answer").toggleClass("d-none");
+  });
+
+  $("#reset").click(function () {
+    $(".question").removeClass("d-none");
+    $(".answer").addClass("d-none");
+  });
 
   class flashCard {
-    constructor(frontText, backText) {
-      this.frontText = frontText;
-      this.backText = backText;
+    constructor(question, answer) {
+      this.question = question;
+      this.answer = answer;
     }
   }
 
@@ -28,7 +48,8 @@ $(document).ready(function () {
   function addCardsToDOM(cards) {
     for (let i = 0; i < cards.length; i++) {
       var cardHtml = `<div class="card mr-3 mb-3">
-        <div class="card-body">${cards[i].frontText}</div>
+        <div class="card-body question">${cards[i].question}</div>
+        <div class="card-body answer text-success d-none">${cards[i].answer}</div>
       </div>`;
 
       $("#flashcards-container").append(cardHtml);
@@ -40,7 +61,7 @@ $(document).ready(function () {
   function addCardsToDOM2(cards) {
     for (let i = 0; i < cards.length; i++) {
       var cardElem = $("<div>").addClass("card mr-3 mb-3");
-      var cardBody = $("<div>").addClass("card-body").text(cards[i].frontText);
+      var cardBody = $("<div>").addClass("card-body").text(cards[i].question);
       cardElem.append(cardBody);
       $("#flashcards-container").append(cardElem);
     }
