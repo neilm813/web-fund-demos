@@ -33,3 +33,7 @@
 4. Thur
    - [removeAt](../arrays/removeAt.js)
    - [minToFront](../arrays/minToFront.js)
+5. Fri
+   - [flatten2dArray](../arrays/flatten2dArray.js)
+   - [secondLargest](../arrays/secondLargest.js)
+   - [sumArrColumns](../arrays/sumArrColumns.js)
